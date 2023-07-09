@@ -59,6 +59,21 @@ a {
 	background-color: #1f3776;
 }
 
+.title-center {
+	font-size: 46px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.title-center::after {
+	content: '';
+	width: 40px;
+	height: 1px;
+	background-color: #fff;
+	display: block;
+	margin: 15px auto 0 auto;
+} 
+
 /* header */
 .site-header {
 	color: #fff;
@@ -126,4 +141,133 @@ a {
 	max-width: 492px;
 	margin: 0 auto;
 	display: block;	
+}
+
+/* s-features */
+
+.s-featurers {
+	padding: 85px 0;
+}
+
+.features-wrap {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.features-item {
+	text-align: center;
+	padding: 60px 0;
+}
+
+.features-item:nth-child(2n+1) {
+	border-right: 1px solid #D9D9D9;
+}
+
+.features-item:nth-last-child(n+3) {
+	border-bottom: 1px solid #D9D9D9;
+}
+
+.features-icon {
+	margin-bottom: 10px;
+}
+
+.fuaters-title {
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 14px;
+}
+
+.fuaters-desc {
+	max-width: 282px;
+	color: #B4B3B3;
+	margin: 0 auto;
+}
+
+/* pricing */
+
+.s-pricing {
+	padding: 85px 0;
+	background: var(--gradient-1, linear-gradient(130deg, #EA3B65 0%, rgba(144, 53, 199, 0.64) 100%));
+	color: #fff;
+}
+
+.pricing-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 60px;
+}
+
+.pricing-item {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 1px 11px 0px rgba(43, 40, 40, 0.07);
+	padding: 50px 30px;
+	color: #565050;
+	text-align: center;
+	width: 33%;
+	height: 100%;
+}
+
+.pricing-tariff {
+	text-transform: uppercase;
+	font-size: 24px;
+	margin-bottom: 12px;
+}
+
+.pricing-price {
+	font-size: 46px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	color: #EA3B65;
+}
+
+.pricing-item ul {
+	text-align: left;
+	padding-left: 10px;
+	line-height: 1.7;
+	font-weight: 300;
+	margin-bottom: 25px;
+}
+
+.pricing-price ul li:nth-last-child(n+2) {
+	margin-bottom: 10px;
+}
+
+.pricing-btn {
+	text-align: center;
+}
+
+.pricing-btn a {
+	border: 2px solid #25428E;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 10px 40px;
+	transition: 0.35s ease;
+
+}
+
+.pricing-btn a:hover {
+	background-color: #25428E;
+	color: #fff;
+}
+
+.pricing-item:nth-child(2) {
+	background-color: #25428E;
+	color: #fff;
+}
+
+.pricing-item:nth-child(2) .pricing-price {
+	color: #fff;
+}
+
+.pricing-item:nth-child(2) .pricing-btn a {
+	background-color: #fff;
+	color: #25428E;
+}
+
+.pricing-item:nth-child(2) .pricing-btn a:hover {
+	background-color: #25428E;
+	color: #fff;
+	border-color: #fff;
 }
